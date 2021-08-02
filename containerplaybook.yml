@@ -5,8 +5,8 @@
   tasks:
    - name: docker_login
      docker_login:
-               username: vmadmin
-               password: VMDocker#123
+               username: sanjivranjan123
+               password: AzureVMAdmin123#
    - name: pull
      docker_image:
              name: sanjivranjan123/proj1:$BUILD_NUMBER 
