@@ -5,17 +5,18 @@
   tasks:
    - name: docker_login
      docker_login:
-               username: sanjivranjan123
-               password: AzureVMAdmin123#
+               username: vmadmin
+               password: VMDocker#123
    - name: pull
      docker_image:
-             name: sanjivranjan123/proj1:{{imagename}}
+             name: sanjivranjan123/proj1:$BUILD_NUMBER 
    - name: create container
      docker_container:
              name: web
-             image: sanjivranjan123/proj1:{{imagename}}
+             image: sanjivranjan123/proj1:$BUILD_NUMBER 
              state: started
              ports: 
                     "80:8080"
              tty: true
              detach: true
+
