@@ -9,11 +9,11 @@
                password: AzureVMAdmin123#
    - name: pull
      docker_image:
-             name: sanjivranjan123/proj1:$BUILD_NUMBER 
+             name: sanjivranjan123/proj1:{{BUILD_NUMBER}} 
    - name: create container
      docker_container:
              name: web
-             image: sanjivranjan123/proj1:$BUILD_NUMBER 
+             image: sanjivranjan123/proj1:{{BUILD_NUMBER}}
              state: started
              ports: 
                     "80:8080"
