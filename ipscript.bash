@@ -31,10 +31,9 @@ fi
 
 #ssh -copy-id passing to remote host
 
-sshpass -p $V_Pwd ssh-copy-id -i ~/.ssh/id_rsa.pub $V_User@$pip> /dev/null
+sshpass -p $V_Pwd ssh-copy-id -o StrictHostKeyChecking=no -i ~/.ssh/id_rsa.pub $V_User@$pip> /dev/null
 
 echo "Key copied"
-
 
 
 
