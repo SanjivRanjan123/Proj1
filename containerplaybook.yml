@@ -11,7 +11,7 @@
      docker_image:
              name: sanjivranjan123/proj1:{{imagename}}
    - name: create container
-     cocker_container:
+     docker_container:
              name: web
              image: sanjivranjan123/proj1:{{imagename}}
              state: started
