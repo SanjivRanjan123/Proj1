@@ -10,7 +10,6 @@
    - name: pull
      docker_image:
              name: sanjivranjan123/proj1:{{imagename}}
- 
    - name: create container
      cocker_container:
              name: web
@@ -20,4 +19,3 @@
                     "80:8080"
              tty: true
              detach: true
-
